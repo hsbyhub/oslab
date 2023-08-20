@@ -1,5 +1,6 @@
 **/*.o
 **/compile_commands.json
+linux-0.11/.cache
 linux-0.11/Image
 linux-0.11/System.map
 linux-0.11/boot/bootsect

@@ -206,9 +206,9 @@ sys_execve:
 
 .align 2
 sys_fork:
-	call find_empty_process
-	testl %eax,%eax
-	js 1f
+	call find_empty_process ## 获取空的进程
+	testl %eax,%eax 		## 是否获取成功
+	js 1f					## 失败则直接返回
 	push %gs
 	pushl %esi
 	pushl %edi

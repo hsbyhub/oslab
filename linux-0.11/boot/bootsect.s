@@ -52,8 +52,8 @@ _start:
 	sub	si,si
 	sub	di,di
 	rep
-	movw
-	jmpi	go,INITSEG
+	movw				!! 将本程序从BOOTSEG拷贝到INITSEG
+	jmpi	go,INITSEG 	!! 跳转到INITSEG, 将设置cs寄存器为INITSEG
 go:	mov	ax,cs
 	mov	ds,ax
 	mov	es,ax

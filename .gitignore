@@ -12,3 +12,4 @@ linux-0.11/kernel/math/math.a
 linux-0.11/lib/lib.a
 linux-0.11/tools/build
 linux-0.11/tools/system
+linux-0.11/test/
